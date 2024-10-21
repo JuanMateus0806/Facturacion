@@ -11,8 +11,11 @@ import lombok.Data;
 @AllArgsConstructor
 public class Usuario {
 
+    @Id
     private String login;
+
     private String contraseña;
+
     private String tipoUsuario;
 
     @ManyToOne(fetch = FetchType.LAZY)
