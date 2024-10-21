@@ -4,11 +4,15 @@ import com.facturacion.demo.model.embedded_id.DetallesFacturaKey;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
-@Entity
 @Data
+@Builder
 @AllArgsConstructor
+@NoArgsConstructor
+@Entity
 public class DetalleFactura {
 
     @EmbeddedId

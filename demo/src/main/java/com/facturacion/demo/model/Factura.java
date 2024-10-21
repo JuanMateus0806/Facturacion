@@ -4,15 +4,19 @@ import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.sql.Date;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
 @Data
+@Builder
 @AllArgsConstructor
+@NoArgsConstructor
+@Entity
 
 @Table(name = "Facturas")
 public class Factura {
