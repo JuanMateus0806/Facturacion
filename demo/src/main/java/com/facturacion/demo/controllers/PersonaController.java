@@ -35,7 +35,7 @@ public class PersonaController {
     }
 
     @PutMapping("/{id}")
-    public ResponseEntity<Persona> actualizarPersona (@PathVariable Integer id ,@Validated @RequestBody Persona persona){
+    public ResponseEntity<Persona> actualizarPersona(@PathVariable Integer id ,@Validated @RequestBody Persona persona){
         Optional<Persona> personaOptional = personaRepository.findById(id);
         if (!personaOptional.isPresent()){
             return ResponseEntity.unprocessableEntity().build();
