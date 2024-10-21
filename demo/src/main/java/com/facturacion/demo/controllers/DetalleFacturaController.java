@@ -15,7 +15,7 @@ import java.util.Optional;
 
 
 @RestController
-@RequestMapping("api/factura")
+@RequestMapping("api/detalleFactura")
 public class DetalleFacturaController {
 
     @Autowired
