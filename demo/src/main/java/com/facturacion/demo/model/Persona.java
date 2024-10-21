@@ -15,6 +15,7 @@ import java.util.Set;
 @Table(name = "Personas")
 public class Persona {
 
+    @Id
     private int documento;
 
     @Column(name = "tipo_documento")

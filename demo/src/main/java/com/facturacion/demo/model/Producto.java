@@ -1,9 +1,7 @@
 package com.facturacion.demo.model;
 
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.OneToMany;
+import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -15,7 +13,11 @@ import java.util.Set;
 @AllArgsConstructor
 public class Producto {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "id_producto")
     private int idProducto;
+
     private String nombre;
     private String unidadMedida;
 
